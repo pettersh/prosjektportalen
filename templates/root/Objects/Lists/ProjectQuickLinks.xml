@@ -1,0 +1,7 @@
+<pnp:ListInstance Title="{resource:Lists_ProjectQuickLinks_Title}" Description="" DocumentTemplate="" TemplateType="103" Url="Lists/ProjectQuickLinks" ContentTypesEnabled="true" 
+    xmlns:pnp="http://schemas.dev.office.com/PnP/2016/05/ProvisioningSchema">
+    <pnp:FieldRefs>
+        <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Hidden="true" />
+        <pnp:FieldRef ID="b5fc712a-9908-4ba1-a8ac-7e51eca7a251" Name="GtDpIcon" />
+    </pnp:FieldRefs>
+</pnp:ListInstance>

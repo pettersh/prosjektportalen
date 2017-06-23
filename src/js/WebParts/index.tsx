@@ -7,6 +7,7 @@ import NewProjectLink from "./NewProjectLink";
 import Announcements from "./Announcements";
 import LatestProjects from "./LatestProjects";
 import QuickLinks from "./QuickLinks";
+import ProjectQuickLinks from "./ProjectQuickLinks";
 import DynamicPortfolio from "./DynamicPortfolio";
 import BenefitsOverview from "./BenefitsOverview";
 import ProjectStatus from "./ProjectStatus";
@@ -25,6 +26,7 @@ const wp_map: IWebPartMapping = {
     "pp-announcements": <Announcements />,
     "pp-latestprojects": <LatestProjects itemsCount={8} reloadInterval={40} />,
     "pp-quicklinks": <QuickLinks />,
+    "pp-project-quicklinks": <ProjectQuickLinks />,
     "pp-dynamicportfolio": <DynamicPortfolio />,
     "pp-benefitsoverview": <BenefitsOverview />,
     "pp-benefitsoverview-search": <BenefitsOverview dataSource={DataSource.Search} groupByOptions={[{ name: __("String_Project"), key: "SiteTitle" }]} />,

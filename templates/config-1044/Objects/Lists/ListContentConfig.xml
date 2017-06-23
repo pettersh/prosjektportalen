@@ -33,5 +33,13 @@
             <pnp:DataValue FieldName="GtLccFields">Title,GtProjectPhase</pnp:DataValue>
             <pnp:DataValue FieldName="GtLccLabel">Inkluder standard fasesjekkpunkter</pnp:DataValue>
         </pnp:DataRow>
+        <pnp:DataRow>
+            <pnp:DataValue FieldName="Title">ProjectQuickLinks</pnp:DataValue>
+            <pnp:DataValue FieldName="GtLccSourceUrl">{parameter:DataSourceSiteUrl}</pnp:DataValue>
+            <pnp:DataValue FieldName="GtLccSourceList">Prosjektsnarveier</pnp:DataValue>
+            <pnp:DataValue FieldName="GtLccDestinationList">Prosjektsnarveier</pnp:DataValue>
+            <pnp:DataValue FieldName="GtLccFields">Title,GtDpIcon</pnp:DataValue>
+            <pnp:DataValue FieldName="GtLccLabel">Inkluder standard prosjektsnarveier</pnp:DataValue>
+        </pnp:DataRow>
     </pnp:DataRows>
 </pnp:ListInstance>
