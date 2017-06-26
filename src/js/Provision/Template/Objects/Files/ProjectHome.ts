@@ -134,6 +134,14 @@ const ProjectHome: IFile = {
             },
         },
         {
+            Title: __("Lists_ProjectShortcuts_Title"),
+            Zone: "LeftColumn",
+            Order: 4,
+            Contents: {
+                FileSrc: "{wpgallery}/ProjectShortcuts.webpart",
+            },
+        },
+        {
             Title: __("WebPart_ProjectInfo_Title"),
             Zone: "RightColumn",
             Order: 0,

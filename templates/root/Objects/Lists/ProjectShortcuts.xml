@@ -1,4 +1,4 @@
-<pnp:ListInstance Title="{resource:Lists_ProjectShortcuts_Title}" Description="" DocumentTemplate="" TemplateType="170" Url="Lists/ProjectShortcuts" EnableVersioning="true" DraftVersionVisibility="0" TemplateFeatureID="192efa95-e50c-475e-87ab-361cede5dd7f" EnableAttachments="false" EnableFolderCreation="false">
+<pnp:ListInstance Title="{resource:Lists_ProjectShortcuts_Title}" Description="" DocumentTemplate="" TemplateType="170" Url="Lists/ProjectShortcuts" EnableVersioning="true" DraftVersionVisibility="0" TemplateFeatureID="192efa95-e50c-475e-87ab-361cede5dd7f" EnableAttachments="false" EnableFolderCreation="false" xmlns:pnp="http://schemas.dev.office.com/PnP/2016/05/ProvisioningSchema">
     <pnp:Views>
         <View Name="{D8DB5146-74D5-4111-90B9-01C00519848E}" DefaultView="TRUE" MobileDefaultView="TRUE" Type="HTML" ReadOnly="TRUE" OrderedView="TRUE" DisplayName="Fliser" Url="{site}/Lists/ProjectShortcuts/Tiles.aspx" Level="1" BaseViewID="1" ContentTypeID="0x">
             <Query>

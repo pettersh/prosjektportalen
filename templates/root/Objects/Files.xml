@@ -114,7 +114,7 @@
     <pnp:File Src="WebPartGallery\ProjectShortcuts.webpart" Folder="_catalogs/wp" Overwrite="true">
         <pnp:Properties>
             <pnp:Property Key="Title" Value="Prosjektsnarveier" />
-            <pnp:Property Key="WebPartDescription" Value="Viser lenker med ikon." />
+            <pnp:Property Key="WebPartDescription" Value="Viser promoterte prosjektlenker med ikon." />
             <pnp:Property Key="Group" Value="Prosjektportalen" />
         </pnp:Properties>
     </pnp:File>

@@ -355,26 +355,11 @@ const Lists: IList[] = [
     {
         Title: __("Lists_ProjectShortcuts_Title"),
         Description: "",
-        Template: 103,
-        ContentTypesEnabled: true,
-        RemoveExistingContentTypes: true,
-        ContentTypeBindings: [{
-            ContentTypeID: "0x01050085745B4500C648868E81208756AF1A4D01",
-        }],
+        Template: 170,
+        ContentTypesEnabled: false,
         AdditionalSettings: {
             EnableVersioning: true,
         },
-        Views: [{
-            Title: __("View_AllItems_DisplayName"),
-            ViewFields: ["URL", "GtDpIcon", "Modified", "Editor"],
-            AdditionalSettings: {
-                RowLimit: 30,
-                Paged: true,
-                ViewQuery: `<OrderBy>
-                  <FieldRef Name="ID" Ascending="FALSE" />
-                </OrderBy>`,
-            },
-        }],
     },
     {
         Title: __("Lists_BenefitsAnalysis_Title"),
