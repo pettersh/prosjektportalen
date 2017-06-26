@@ -137,6 +137,21 @@ const ProjectHome: IFile = {
             Title: __("Lists_ProjectShortcuts_Title"),
             Zone: "LeftColumn",
             Order: 4,
+            PropertyOverrides: [{
+                name: "Title",
+                type: "string",
+                value: __("Lists_ProjectShortcuts_Title"),
+            },
+            {
+                name: "ListUrl",
+                type: "string",
+                value: `{site}/Lists/${__("Lists_ProjectShortcuts_Title")}`,
+            },
+            {
+                name: "TitleUrl",
+                type: "string",
+                value: `{site}/Lists/${__("Lists_ProjectShortcuts_Title")}`,
+            }],
             Contents: {
                 FileSrc: "{wpgallery}/ProjectShortcuts.webpart",
             },

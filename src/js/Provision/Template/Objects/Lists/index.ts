@@ -359,6 +359,7 @@ const Lists: IList[] = [
         ContentTypesEnabled: false,
         AdditionalSettings: {
             EnableVersioning: true,
+            TemplateFeatureId: "192efa95-e50c-475e-87ab-361cede5dd7f",
         },
     },
     {

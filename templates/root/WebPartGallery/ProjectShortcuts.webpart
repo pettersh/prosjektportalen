@@ -20,7 +20,6 @@
         <property name="ServerRender" type="bool">False</property>
         <property name="ViewFlags" type="Microsoft.SharePoint.SPViewFlags, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">Html, TabularView, Hidden, ReadOnly, Ordered</property>
         <property name="AllowConnect" type="bool">True</property>
-        <property name="ListName" type="string">{resource:Lists_ProjectShortcuts_Title}}</property>
         <property name="ListDisplayName" type="string" null="true" />
         <property name="AllowZoneChange" type="bool">True</property>
         <property name="ChromeState" type="chromestate">Normal</property>
