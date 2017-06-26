@@ -1,24 +1,59 @@
-<pnp:ListInstance Title="{resource:Lists_ProjectQuickLinks_Title}" Description="" DocumentTemplate="" TemplateType="103" Url="Lists/ProjectQuickLinks" ContentTypesEnabled="true" EnableVersioning="true" RemoveExistingContentTypes="true" xmlns:pnp="http://schemas.dev.office.com/PnP/2016/05/ProvisioningSchema">
-    <pnp:ContentTypeBindings>
-        <pnp:ContentTypeBinding ContentTypeID="0x01050085745B4500C648868E81208756AF1A4D01" Default="true" />
-    </pnp:ContentTypeBindings>
-    <pnp:Views RemoveExistingViews="true">
-        <View DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="{resource:View_AllItems_DisplayName}" Url="{site}/Lists/ProjectQuickLinks/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" >
+<pnp:ListInstance Title="{resource:Lists_ProjectShortcuts_Title}" Description="" DocumentTemplate="" TemplateType="170" Url="Lists/ProjectShortcuts" EnableVersioning="true" DraftVersionVisibility="0" TemplateFeatureID="192efa95-e50c-475e-87ab-361cede5dd7f" EnableAttachments="false" EnableFolderCreation="false">
+    <pnp:Views>
+        <View Name="{D8DB5146-74D5-4111-90B9-01C00519848E}" DefaultView="TRUE" MobileDefaultView="TRUE" Type="HTML" ReadOnly="TRUE" OrderedView="TRUE" DisplayName="Fliser" Url="{site}/Lists/ProjectShortcuts/Tiles.aspx" Level="1" BaseViewID="1" ContentTypeID="0x">
             <Query>
                 <OrderBy>
-                    <FieldRef Name="ID" />
+                    <FieldRef Name="TileOrder" Ascending="TRUE" />
+                    <FieldRef Name="Modified" Ascending="FALSE" />
                 </OrderBy>
             </Query>
             <ViewFields>
-                <FieldRef Name="URL" />
-                <FieldRef Name="GtDpIcon" />
-                <FieldRef Name="Comments" />
-                <FieldRef Name="Modified" />
+                <FieldRef Name="Title" />
+                <FieldRef Name="BackgroundImageLocation" />
+                <FieldRef Name="Description" />
+                <FieldRef Name="LinkLocation" />
+                <FieldRef Name="LaunchBehavior" />
+                <FieldRef Name="BackgroundImageClusterX" />
+                <FieldRef Name="BackgroundImageClusterY" />
             </ViewFields>
             <RowLimit Paged="TRUE">30</RowLimit>
-            <Aggregations Value="Off" />
+            <JSLink>sp.ui.tileview.js</JSLink>
+        </View>
+        <View Name="{E858E48F-B636-4611-ABC0-9BC60A2611C5}" Type="HTML" OrderedView="TRUE" DisplayName="Alle forfremmede koblinger" Url="{site}/Lists/ProjectShortcuts/AllItems.aspx" Level="1" BaseViewID="3" ContentTypeID="0x">
+            <Query>
+                <OrderBy>
+                    <FieldRef Name="TileOrder" Ascending="TRUE" />
+                    <FieldRef Name="Modified" Ascending="FALSE" />
+                </OrderBy>
+            </Query>
+            <ViewFields>
+                <FieldRef Name="Title" />
+                <FieldRef Name="BackgroundImageLocation" />
+                <FieldRef Name="Description" />
+                <FieldRef Name="LinkLocation" />
+                <FieldRef Name="LaunchBehavior" />
+                <FieldRef Name="TileOrder" />
+            </ViewFields>
+            <RowLimit Paged="TRUE">30</RowLimit>
+            <JSLink>clienttemplates.js</JSLink>
         </View>
     </pnp:Views>
+    <pnp:Fields>
+        <Field ID="{a0fc423e-0808-490e-905e-260abd3d6511}" Type="URL" Name="BackgroundImageLocation" DisplayName="Plassering for bakgrunnsbilde" Required="FALSE" SEALED="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="BackgroundImageLocation" />
+        <Field ID="{bced0253-a215-49a2-bcd9-5025ad49560d}" Type="Note" Name="Description" DisplayName="Beskrivelse" Required="FALSE" SEALED="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Description"/>
+        <Field ID="{fda2f5e5-8253-4b10-8876-a42268d758e0}" Type="URL" Name="LinkLocation" DisplayName="Plassering for kobling" Required="TRUE" SEALED="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="LinkLocation" />
+        <Field ID="{b2424958-fe1e-4227-af83-954985029aac}" Type="Choice" Name="LaunchBehavior" DisplayName="Virkemåte for oppstart" Required="TRUE" Format="Dropdown" SEALED="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="LaunchBehavior">
+            <CHOICES>
+                <CHOICE>Navigasjon på siden</CHOICE>
+                <CHOICE>Dialogboks</CHOICE>
+                <CHOICE>Ny fane</CHOICE>
+            </CHOICES>
+            <Default>Navigasjon på siden</Default>
+        </Field>
+        <Field ID="{722b3e6d-ebb5-4b1c-8dde-8936e53a40c3}" Type="Number" Name="TileOrder" DisplayName="Rekkefølge" Required="FALSE" SEALED="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="TileOrder" />
+        <Field ID="{2a54fee9-ad68-454b-905b-f92ccee343d3}" Type="Number" Name="BackgroundImageClusterX" DisplayName="Vannrett start for bakgrunnsbildeklynge" Required="FALSE" SEALED="TRUE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInNewForm="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="BackgroundImageClusterX" />
+        <Field ID="{2976fc30-0bbe-4671-bcf1-87679b512e9b}" Type="Number" Name="BackgroundImageClusterY" DisplayName="Loddrett start for bakgrunnsbildeklynge" Required="FALSE" SEALED="TRUE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInNewForm="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="BackgroundImageClusterY" />
+    </pnp:Fields>
     <pnp:Security>
         <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false">
             <pnp:RoleAssignment Principal="{associatedownergroup}" RoleDefinition="{resource:RoleDefinition_FullControl}" />

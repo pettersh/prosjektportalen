@@ -312,14 +312,4 @@
             <pnp:FieldRef ID="8534f635-0d38-4754-b772-48b0a105357c" Name="GtFeedbackComment" />
         </pnp:FieldRefs>
     </pnp:ContentType>
-    <pnp:ContentType ID="0x01050085745B4500C648868E81208756AF1A4D" Name="Glittertind kobling" Group="{resource:ContentTypes_Group}">
-    </pnp:ContentType>
-    <pnp:ContentType ID="0x01050085745B4500C648868E81208756AF1A4D01" Name="{resource:ContentTypes_ProjectQuickLinks_Name}" Group="{resource:ContentTypes_Group}">
-        <pnp:FieldRefs>
-            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Hidden="true" />
-            <pnp:FieldRef ID="c29e077d-f466-4d8e-8bbe-72b66c5f205c" Name="URL" />
-            <pnp:FieldRef ID="9da97a8a-1da5-4a77-98d3-4bc10456e700" Name="Comments" />
-            <pnp:FieldRef ID="b5fc712a-9908-4ba1-a8ac-7e51eca7a251" Name="GtDpIcon" />
-        </pnp:FieldRefs>
-    </pnp:ContentType>
 </pnp:ContentTypes> 

@@ -232,7 +232,7 @@
   <data name="Lists_ProjectElements_Url" xml:space="preserve">
     <value>Lists/Prosjekter</value>
   </data>
-  <data name="Lists_ProjectQuickLinks_Title" xml:space="preserve">
+  <data name="Lists_ProjectShortcuts_Title" xml:space="preserve">
     <value>Prosjektsnarveier</value>
   </data>
   <data name="DefaultView_ProjectLog_Url" xml:space="preserve">
@@ -375,9 +375,6 @@
   </data>
   <data name="ContentTypes_Gevinstoppfolging_Name" xml:space="preserve">
     <value>Gevinstoppfølging</value>
-  </data>
-  <data name="ContentTypes_ProjectQuickLinks_Name" xml:space="preserve">
-    <value>Prosjektkobling</value>
   </data>
   <data name="ContentTypes_Glittertind_element_Description" xml:space="preserve">
     <value>Opprett et nytt listeelement.</value>

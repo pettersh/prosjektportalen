@@ -353,7 +353,7 @@ const Lists: IList[] = [
         }],
     },
     {
-        Title: __("Lists_ProjectQuickLinks_Title"),
+        Title: __("Lists_ProjectShortcuts_Title"),
         Description: "",
         Template: 103,
         ContentTypesEnabled: true,

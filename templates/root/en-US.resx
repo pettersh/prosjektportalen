@@ -232,7 +232,7 @@
   <data name="Lists_ProjectElements_Url" xml:space="preserve">
     <value>Lists/Project Elements</value>
   </data>
-  <data name="Lists_ProjectQuickLinks_Title" xml:space="preserve">
+  <data name="Lists_ProjectShortcuts_Title" xml:space="preserve">
     <value>Project shortcuts</value>
   </data>
   <data name="DefaultView_Information_Url" xml:space="preserve">
@@ -375,9 +375,6 @@
   </data>
   <data name="ContentTypes_Gevinstoppfolging_Name" xml:space="preserve">
     <value>Benefit Followup</value>
-  </data>
-  <data name="ContentTypes_ProjectQuickLinks_Name" xml:space="preserve">
-    <value>Project Link</value>
   </data>
   <data name="ContentTypes_Glittertind_element_Description" xml:space="preserve">
     <value>Create a new list item.</value>
