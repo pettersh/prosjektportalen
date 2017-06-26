@@ -58,8 +58,10 @@ export default class ProjectQuickLinks extends React.PureComponent<IProjectQuick
                     <ul className={listClassName}>
                         {links.map(({ URL: { Url, Description }, Comments, GtDpIcon }, idx) => (
                             <li className="project-link" key={idx}>
-                                <i className={`ms-Icon ms-Icon--${GtDpIcon}`} aria-hidden="true"></i>
-                                <a href={Url}>{Description}</a>
+                                <a href={Url}>
+                                    <i className={`ms-Icon ms-Icon--${GtDpIcon}`} aria-hidden="true"></i>
+                                    {Description}
+                                </a>
                             </li>
                         ))}
                     </ul>
