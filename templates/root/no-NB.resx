@@ -376,6 +376,9 @@
   <data name="ContentTypes_Gevinstoppfolging_Name" xml:space="preserve">
     <value>Gevinstoppfølging</value>
   </data>
+  <data name="ContentTypes_ProjectQuickLinks_Name" xml:space="preserve">
+    <value>Prosjektkobling</value>
+  </data>
   <data name="ContentTypes_Glittertind_element_Description" xml:space="preserve">
     <value>Opprett et nytt listeelement.</value>
   </data>
@@ -771,6 +774,12 @@
   </data>
   <data name="SiteFields_GtStatusUncertainty_DisplayName" xml:space="preserve">
     <value>Status usikkerhet</value>
+  </data>
+  <data name="SiteFields_GtDpIcon_DisplayName" xml:space="preserve">
+    <value>Ikon</value>
+  </data>
+  <data name="SiteFields_GtDpIcon_Description" xml:space="preserve">
+    <value>Velg navnet på et ikon fra https://dev.office.com/fabric#/styles</value>
   </data>
   <data name="SiteFields_GtSortOrder_Description" xml:space="preserve">
     <value></value>

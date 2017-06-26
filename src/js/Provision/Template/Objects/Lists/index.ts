@@ -347,8 +347,11 @@ const Lists: IList[] = [
         Title: __("Lists_ProjectQuickLinks_Title"),
         Description: "",
         Template: 103,
-        ContentTypesEnabled: false,
-        RemoveExistingContentTypes: false,
+        ContentTypesEnabled: true,
+        RemoveExistingContentTypes: true,
+        ContentTypeBindings: [{
+            ContentTypeID: "0x01050085745B4500C648868E81208756AF1A4D01",
+        }],
         AdditionalSettings: {
             EnableVersioning: true,
         },

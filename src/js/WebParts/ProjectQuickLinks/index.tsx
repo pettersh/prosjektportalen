@@ -28,7 +28,7 @@ export default class ProjectQuickLinks extends React.PureComponent<IProjectQuick
         new Site(_spPageContextInfo.siteAbsoluteUrl)
             .rootWeb
             .lists
-            .getByTitle(__("Lists_QuickLinks_Title"))
+            .getByTitle(__("Lists_ProjectQuickLinks_Title"))
             .items
             .top(this.props.itemsCount)
             .select("URL", "Comments", "GtDpIcon")
@@ -81,7 +81,7 @@ export default class ProjectQuickLinks extends React.PureComponent<IProjectQuick
                     <ul className={listClassName}>
                         {links.map(({ URL: { Url, Description }, Comments, GtDpIcon }, idx) => (
                             <li className="project-link" key={idx}>
-                                <i className="ms-Icon ms-Icon--{GtDpIcon}" aria-hidden="true"></i>
+                                <i className="ms-Icon ms-Icon--{{GtDpIcon}}" aria-hidden="true"></i>
                                 <h5><a href={Url}>{Description}</a></h5>
                                 <span className="ms-metadata">{Comments}</span>
                             </li>

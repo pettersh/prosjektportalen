@@ -1,7 +1,29 @@
-<pnp:ListInstance Title="{resource:Lists_ProjectQuickLinks_Title}" Description="" DocumentTemplate="" TemplateType="103" Url="Lists/ProjectQuickLinks" ContentTypesEnabled="true" 
-    xmlns:pnp="http://schemas.dev.office.com/PnP/2016/05/ProvisioningSchema">
-    <pnp:FieldRefs>
-        <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Hidden="true" />
-        <pnp:FieldRef ID="b5fc712a-9908-4ba1-a8ac-7e51eca7a251" Name="GtDpIcon" />
-    </pnp:FieldRefs>
+<pnp:ListInstance Title="{resource:Lists_ProjectQuickLinks_Title}" Description="" DocumentTemplate="" TemplateType="103" Url="Lists/ProjectQuickLinks" ContentTypesEnabled="true" EnableVersioning="true" RemoveExistingContentTypes="true" xmlns:pnp="http://schemas.dev.office.com/PnP/2016/05/ProvisioningSchema">
+    <pnp:ContentTypeBindings>
+        <pnp:ContentTypeBinding ContentTypeID="0x01050085745B4500C648868E81208756AF1A4D01" Default="true" />
+    </pnp:ContentTypeBindings>
+    <pnp:Views RemoveExistingViews="true">
+        <View DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="{resource:View_AllItems_DisplayName}" Url="{site}/Lists/ProjectQuickLinks/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" >
+            <Query>
+                <OrderBy>
+                    <FieldRef Name="ID" />
+                </OrderBy>
+            </Query>
+            <ViewFields>
+                <FieldRef Name="URL" />
+                <FieldRef Name="GtDpIcon" />
+                <FieldRef Name="Comments" />
+                <FieldRef Name="Modified" />
+            </ViewFields>
+            <RowLimit Paged="TRUE">30</RowLimit>
+            <Aggregations Value="Off" />
+        </View>
+    </pnp:Views>
+    <pnp:Security>
+        <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false">
+            <pnp:RoleAssignment Principal="{associatedownergroup}" RoleDefinition="{resource:RoleDefinition_FullControl}" />
+            <pnp:RoleAssignment Principal="{associatedmembergroup}" RoleDefinition="{resource:RoleDefinition_Read}" />
+            <pnp:RoleAssignment Principal="{associatedvisitorgroup}" RoleDefinition="{resource:RoleDefinition_Read}" />
+        </pnp:BreakRoleInheritance>
+    </pnp:Security>
 </pnp:ListInstance>

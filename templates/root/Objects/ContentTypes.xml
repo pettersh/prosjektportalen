@@ -235,7 +235,6 @@
             <pnp:FieldRef ID="9788aee9-7b21-480f-85e9-cee535e8cc20" Name="GtDpDisplayName" Required="true" />
             <pnp:FieldRef ID="6cad365d-6424-41ce-a164-6457ee69772d" Name="GtDpMultiple" />
             <pnp:FieldRef ID="3b19f43d-fcd2-4801-b2dc-52a9b12863e7" Name="GtDpDefaultHidden" />
-            <pnp:FieldRef ID="b5fc712a-9908-4ba1-a8ac-7e51eca7a251" Name="GtDpIcon" />
         </pnp:FieldRefs>
     </pnp:ContentType>
     <pnp:ContentType ID="0x0100B98DDFB576777B409846155F0D450EB403" Name="Dynamic Portfolio View" Description="" Group="{resource:ContentTypes_Group}">
@@ -311,6 +310,16 @@
             <pnp:FieldRef ID="7dc25f7c-9923-4846-94ad-1c2c073aa44f" Name="GtFeedbackStatus" />
             <pnp:FieldRef ID="db42d9aa-f4ab-47e0-b0d6-8c0af0d70d70" Name="GtFeedbackCriticality" Required="true" />
             <pnp:FieldRef ID="8534f635-0d38-4754-b772-48b0a105357c" Name="GtFeedbackComment" />
+        </pnp:FieldRefs>
+    </pnp:ContentType>
+    <pnp:ContentType ID="0x01050085745B4500C648868E81208756AF1A4D" Name="Glittertind kobling" Group="{resource:ContentTypes_Group}">
+    </pnp:ContentType>
+    <pnp:ContentType ID="0x01050085745B4500C648868E81208756AF1A4D01" Name="{resource:ContentTypes_ProjectQuickLinks_Name}" Group="{resource:ContentTypes_Group}">
+        <pnp:FieldRefs>
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Hidden="true" />
+            <pnp:FieldRef ID="c29e077d-f466-4d8e-8bbe-72b66c5f205c" Name="URL" />
+            <pnp:FieldRef ID="9da97a8a-1da5-4a77-98d3-4bc10456e700" Name="Comments" />
+            <pnp:FieldRef ID="b5fc712a-9908-4ba1-a8ac-7e51eca7a251" Name="GtDpIcon" />
         </pnp:FieldRefs>
     </pnp:ContentType>
 </pnp:ContentTypes> 
