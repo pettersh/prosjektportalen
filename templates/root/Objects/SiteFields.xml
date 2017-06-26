@@ -303,7 +303,7 @@
         <Default>0</Default>
     </Field>
     <Field Type="Boolean" DisplayName="Multiple" ID="{6cad365d-6424-41ce-a164-6457ee69772d}" StaticName="GtDpMultiple" Name="GtDpMultiple" Group="{resource:SiteFields_Group}">
-        <Default>1</Default>
+        <Default>0</Default>
     </Field>
     <Field Type="Boolean" DisplayName="IsResizable" ID="{bedf3697-fb30-4292-a2bc-40fecc8aa90e}" StaticName="GtDpIsResizable" Name="GtDpIsResizable" Group="{resource:SiteFields_Group}">
         <Default>0</Default>
@@ -341,7 +341,7 @@
     <Field Type="Boolean" DisplayName="Default" ID="{19c0c03c-678a-4c2a-ab9b-cb9ffd903012}" StaticName="GtLccDefault" Name="GtLccDefault" Group="{resource:SiteFields_Group}">
         <Default>1</Default>
     </Field>
-    <Field Type="Text" DisplayName="Icon" ID="{b5fc712a-9908-4ba1-a8ac-7e51eca7a251}" StaticName="GtDpIcon" Name="GtDpIcon" Group="{resource:SiteFields_Group}" Description="Select an icon name from https://dev.office.com/fabric#/styles"/>
+    <Field Type="Text" DisplayName="{resource:SiteFields_GtDpIcon_DisplayName}" ID="{b5fc712a-9908-4ba1-a8ac-7e51eca7a251}" StaticName="GtDpIcon" Name="GtDpIcon" Group="{resource:SiteFields_Group}" Description="{resource:SiteFields_GtDpIcon_Description}"/>
     <Field Type="Boolean" DisplayName="PersonalView" ID="{9f4ee969-ea00-4cc1-a466-a05c7db4156d}" StaticName="GtDpPersonalView" Name="GtDpPersonalView" Group="{resource:SiteFields_Group}" Description="If checked, this view will only be available for the user that created this item.">
         <Default>0</Default>
     </Field>
