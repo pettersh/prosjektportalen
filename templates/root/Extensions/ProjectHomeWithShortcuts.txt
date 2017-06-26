@@ -1,0 +1,43 @@
+{
+    "Files": [
+        {
+            "Folder": "SitePages",
+            "Url": "ProjectHome.aspx",
+            "WebParts": [
+                {
+                    "Title": "Prosjektets faser",
+                    "Zone": "LeftColumn",
+                    "Order": 0,
+                    "Contents": {
+                        "FileSrc": "{wpgallery}/ProjectPhases.webpart"
+                    }
+                },
+                {
+                    "Title": "Prosjektsnarveier",
+                    "Zone": "LeftColumn",
+                    "Order": 4,
+                    "PropertyOverrides": [
+                        {
+                            "name": "Title",
+                            "type": "string",
+                            "value": "Prosjektsnarveier"
+                        },
+                        {
+                            "name": "ListUrl",
+                            "type": "string",
+                            "value": "{site}/Lists/Prosjektsnarveier"
+                        },
+                        {
+                            "name": "TitleUrl",
+                            "type": "string",
+                            "value": "{site}/Lists/Prosjektsnarveier"
+                        }
+                    ],
+                    "Contents": {
+                        "FileSrc": "{wpgallery}/ProjectShortcuts.webpart"
+                    }
+                }
+            ]
+        }
+    ]
+}
