@@ -1804,4 +1804,7 @@
   <data name="SiteFields_GtRiskFactor_Formula" xml:space="preserve">
     <value>=[Sannsynlighet (S)]*[Konsekvens (K)]</value>
   </data>
+  <data name="SiteFields_GtProjectEventDateAndTitle_Formula" xml:space="preserve">
+    <value>=TEKST(Starttidspunkt;"yyyy-mm-dd")&amp;" "&amp;Tittel</value>
+  </data>
 </root>
