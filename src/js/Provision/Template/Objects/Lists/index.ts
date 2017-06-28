@@ -302,9 +302,9 @@ const Lists: IList[] = [
         AdditionalSettings: {
             EnableVersioning: true,
         },
-        Fields: process.env.LANGUAGE === 1044 ? [
+        Fields:  [
             SiteFields.GtProjectEventDateAndTitle,
-        ] : [],
+        ],
     },
     {
         Title: __("Lists_Documents_Title"),
